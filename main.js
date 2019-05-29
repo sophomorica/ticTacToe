@@ -11,6 +11,8 @@ var s6 = document.getElementById("6");
 var s7 = document.getElementById("7");
 var s8 = document.getElementById("8");
 var s9 = document.getElementById("9");
+var winner = document.getElementById("won")
+var c1="1",c2="c2",c3="c3",c4="c4",c5="c5",c6="c6",c7="c7",c8="c8",c9="c9";
 
 //const moves = [s1,s2,s3,s4,s5,s6,s7,s8,s9]
 //const moves = [s1,s2,s3,s4,s5,s6,s7,s8,s9]
@@ -84,6 +86,17 @@ for (var i = 0; i < squares.length; i++) {
         display_input(s9);
         break;
     }
+    var trios = [[c1,c2,c3],[c4,c5,c6],[c7,c8,c9],[c1,c4,c7],[c2,c5,c8],[c3,c6,c9],[c1,c5,c9],[c3,c5,c7]];
+    trios.forEach( function(element) {
+      if (element.every( (val, i, arr) => val === "x" ) === true) {
+        console.log("player 1 wins")
+        winner.innerHTML = "X's Win!!"
+      }
+      if (element.every( (val, i, arr) => val === "o" ) === true) {
+        console.log("player 2 wins")
+        winner.innerHTML = "O's Win!!"
+      }
+    });
   });
 }
 // ticTac(player)
