@@ -11,7 +11,7 @@ var s5 = document.getElementById("5")
 var s6 = document.getElementById("6")
 var s7 = document.getElementById("7")
 var s8 = document.getElementById("8")
-var s9 = document.getElementById("9")
+var s9 = document.getElementById("9")git pu
 
 for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", function() {
