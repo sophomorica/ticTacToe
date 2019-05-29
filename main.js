@@ -2,6 +2,7 @@ var squares = document.getElementsByClassName("game_square");
 var userChoice;
 console.log(squares);
 // var test = document.getElementById("1")
+var moves = []
 var s1 = document.getElementById("1")
 var s2 = document.getElementById("2")
 var s3 = document.getElementById("3")
@@ -11,7 +12,6 @@ var s6 = document.getElementById("6")
 var s7 = document.getElementById("7")
 var s8 = document.getElementById("8")
 var s9 = document.getElementById("9")
-const moves = [s1,s2,s3,s4,s5,s6,s7,s8,s9]
 
 for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", function() {
