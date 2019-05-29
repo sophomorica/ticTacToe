@@ -1,6 +1,6 @@
 .container{
 margin: 20px;
-background-image: linear-gradient(#d9fff9, #3fd3d8);
+background-image: linear-gradient(#6680f0, #3fd3d8, #d9fff9);
 padding-bottom: 100px;
 
 }
@@ -18,7 +18,7 @@ padding-bottom: 100px;
 .game_square{
   width: 110px;
   height: 110px;
-  background-color: rgb(173, 0, 216);
+  background-color: rgb(74, 28, 202);
   border: 2px solid white;
   display: flex;
   justify-content: center;
@@ -34,7 +34,8 @@ padding-bottom: 100px;
 .header {
   padding: 1px;
   text-align: center;
-  background-image: linear-gradient(#3fd3d8, #a5f1e7);
+  background-image: linear-gradient( #3fd3d8);
+
   color: white;
   font-size: 50px;
   font-family: sans-serif;
