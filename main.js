@@ -75,11 +75,11 @@ for (var i = 0; i < squares.length; i++) {
     trios.forEach( function(element) {
       if (element.every( (val, i, arr) => val === "x" ) === true) {
         console.log("player 1 wins")
-        winner.innerHTML = "Player 1 Won"
+        winner.innerHTML = "X's Win!!"
       }
       if (element.every( (val, i, arr) => val === "o" ) === true) {
         console.log("player 2 wins")
-        winner.innerHTML = "Player 2 Won"
+        winner.innerHTML = "O's Win!!"
       }
     });
   });
