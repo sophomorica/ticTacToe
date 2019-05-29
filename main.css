@@ -1,0 +1,24 @@
+.container{
+margin: 25px;
+
+}
+h1{
+  text-align: center;
+  padding-top:25px;
+}
+.game{
+  display:flex;
+  justify-content: center;
+}
+.game_square{
+  width: 200px;
+  height: 200px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+
+}
+.user{
+  font-size: 50px;
+}
