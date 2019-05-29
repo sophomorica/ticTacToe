@@ -1,6 +1,7 @@
 .container{
-margin: 25px;
-background-color: rgb(7, 117, 121)
+margin: 20px;
+background-color: #58ccb9;
+padding-bottom: 100px;
 
 }
 .body{
@@ -12,12 +13,13 @@ background-color: rgb(7, 117, 121)
 .game{
   display:flex;
   justify-content: center;
+  
 }
 .game_square{
   width: 200px;
   height: 200px;
   background-color: rgb(173, 0, 216);
-  border: 2px solid white;
+  border: 5px solid white;
   display: flex;
   justify-content: center;
 
@@ -25,7 +27,8 @@ background-color: rgb(7, 117, 121)
 .user{
   font-size: 80px;
   color: white;
-  font-family: sans-serif
+  font-family: sans-serif;
+  text-align: justify;
 }
 
 .header {
@@ -34,12 +37,7 @@ background-color: rgb(7, 117, 121)
   background: #58ccb9;
   color: white;
   font-size: 60px;
-  font-family: Cambria
-  margin: 25px 50px;
+  font-family: sans-serif;
   
-  
-}
-
-.playerbox{
   
 }
