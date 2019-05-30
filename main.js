@@ -115,11 +115,11 @@ for (var i = 0; i < squares.length; i++) {
     // var trios = [[c1,c2,c3],[c4,c5,c6],[c7,c8,c9],[c1,c4,c7],[c2,c5,c8],[c3,c6,c9],[c1,c5,c9],[c3,c5,c7]];
     var trios = [[c_array[1-1],c_array[2-1],c_array[3-1]],[c_array[4-1],c_array[5-1],c_array[6-1]],[c_array[7-1],c_array[8-1],c_array[9-1]],[c_array[1-1],c_array[4-1],c_array[7-1]],[c_array[2-1],c_array[5-1],c_array[8-1]],[c_array[3-1],c_array[6-1],c_array[9-1]],[c_array[1-1],c_array[5-1],c_array[9-1]],[c_array[3-1],c_array[5-1],c_array[7-1]]];
     trios.forEach( function(element) {
-      if (element.every( (val, i, arr) => val === "x" ) === true) {
+      if (element.every( (val) => val === "x" ) === true) {
         console.log("player 1 wins")
         winner.innerHTML = "X Wins!!"
       }
-      if (element.every( (val, i, arr) => val === "o" ) === true) {
+      if (element.every( (val) => val === "o" ) === true) {
         console.log("player 2 wins")
         winner.innerHTML = "O Wins!!"
       }
