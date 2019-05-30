@@ -1,7 +1,6 @@
 var squares = document.getElementsByClassName("game_square");
 var userChoice;
-console.log(squares);
-// var test = document.getElementById("1")
+var button = document.getElementById("reload")
 var s1 = document.getElementById("1");
 var s2 = document.getElementById("2");
 var s3 = document.getElementById("3");
@@ -14,7 +13,9 @@ var s9 = document.getElementById("9");
 var winner = document.getElementById("won")
 var c1="c1",c2="c2",c3="c3",c4="c4",c5="c5",c6="c6",c7="c7",c8="c8",c9="c9";
 const c_array = [c1,c2,c3,c4,c5,c6,c7,c8,c9]
-
+button.addEventListener("click", function(){
+  location.reload()
+})
 // for (var i = 0; i < c_array.length; i++){
 //   if (i == pick){
 //     c_array[i] = "x"
@@ -35,25 +36,17 @@ function display_input(choice) {
     c_array.forEach((item)=>{
       if (item == pick){
         c_array[choice.id-1] = "x"
-        console.log(c_array)
-        console.log(c4)
-        // console.log(c_array)
       }
     })
-    //console.log(player)
     player = 0;
   } else {
     let content = document.createElement("h1");
     content.className = "user";
     content.textContent = "o";
-    // console.log(choice.id)
     var pick = ("c" + choice.id)
-    // console.log(pick)
     c_array.forEach((item)=>{
       if (item == pick){
         c_array[choice.id-1] = "o"
-        console.log(c_array)
-        // console.log(c_array)
       }
     })
     choice.appendChild(content);
@@ -68,16 +61,10 @@ for (var i = 0; i < squares.length; i++) {
   squares[i].addEventListener("click", function() {
     userChoice = this.id;
 
-    //  console.log(player)
-    // content = document.createElement("h1");
-    // content.className = "user";
-    // content.textContent = userChoice
-
     switch (userChoice) {
       case "1":
         removeContent();
         display_input(s1)
-        // console.log(player)
         break;
       case "2":
         removeContent();
@@ -112,7 +99,6 @@ for (var i = 0; i < squares.length; i++) {
         display_input(s9);
         break;
     }
-    // var trios = [[c1,c2,c3],[c4,c5,c6],[c7,c8,c9],[c1,c4,c7],[c2,c5,c8],[c3,c6,c9],[c1,c5,c9],[c3,c5,c7]];
     var trios = [[c_array[1-1],c_array[2-1],c_array[3-1]],[c_array[4-1],c_array[5-1],c_array[6-1]],[c_array[7-1],c_array[8-1],c_array[9-1]],[c_array[1-1],c_array[4-1],c_array[7-1]],[c_array[2-1],c_array[5-1],c_array[8-1]],[c_array[3-1],c_array[6-1],c_array[9-1]],[c_array[1-1],c_array[5-1],c_array[9-1]],[c_array[3-1],c_array[5-1],c_array[7-1]]];
     trios.forEach( function(element) {
       if (element.every( (val) => val === "x" ) === true) {
